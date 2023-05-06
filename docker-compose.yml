@@ -10,31 +10,31 @@ services:
   node1:
     image: nginx:1.23.1-alpine
     container_name: node1
-    # volumes:
-    #   - /home/pweb2/Web/gcsi/loaderbalancer/build:/usr/share/nginx/html
+    volumes:
+      - /home/marcella/Área de Trabalho/aemotor-loadbalancer/build/aemotor-reactjs/build:/usr/share/nginx/html
     ports:
       - "80"
 
   node2:
     image: nginx:1.23.1-alpine
     container_name: node2
-    # volumes:
-    #   - /home/pweb2/Web/gcsi/loaderbalancer/build:/usr/share/nginx/html
+    volumes:
+      - /home/marcella/Área de Trabalho/aemotor-loadbalancer/build/aemotor-reactjs/build:/usr/share/nginx/html
     ports:
       - "80"
 
   node3:
     image: nginx:1.23.1-alpine
     container_name: node3
-    # volumes:
-    #   - /home/pweb2/Web/gcsi/loaderbalancer/build:/usr/share/nginx/html
+    volumes:
+      - /home/marcella/Área de Trabalho/aemotor-loadbalancer/build/aemotor-reactjs/build:/usr/share/nginx/html
     ports:
       - "80"
 
   node4:
     image: nginx:1.23.1-alpine
     container_name: node4
-    # volumes:
-    #   - /home/pweb2/Web/gcsi/loaderbalancer/build:/usr/share/nginx/html
+    volumes:
+      - /home/marcella/Área de Trabalho/aemotor-loadbalancer/build/aemotor-reactjs/build:/usr/share/nginx/html
     ports:
       - "80"
